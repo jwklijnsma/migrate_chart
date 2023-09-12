@@ -76,7 +76,7 @@ class ChartV2:
 @click.command()
 @click.option('--hostname', default='127.0.0.1', help='the password to login harbor')
 @click.option('--username', default='quattro-admin', help='The username to login harbor')
-@click.option('--password', default='Harbor12345', help='the password to login harbor')
+@click.option('--password', default='lmfEZXZqHCYigIQbhCXk', help='the password to login harbor')
 def migrate(hostname, username, password):
     """
     Migrate chart v2 to harbor oci registry
