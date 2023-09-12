@@ -75,13 +75,13 @@ class ChartV2:
 
 @click.command()
 @click.option('--hostname', default='127.0.0.1', help='the password to login harbor')
-@click.option('--username', default='quattro-admin', help='The username to login harbor')
-@click.option('--password', default='lmfEZXZqHCYigIQbhCXk', help='the password to login harbor')
+@click.option('--username', default='janwiebe@rijkscloud.nl', help='The username to login harbor')
+@click.option('--password', default='GHz49wcqhogedijk', help='the password to login harbor')
 def migrate(hostname, username, password):
     """
     Migrate chart v2 to harbor oci registry
     """
-    if username != 'quattro-admin':
+    if username != 'janwiebe@rijkscloud.nl':
         raise Exception('This operation only allowed for admin')
     subprocess.run([CA_UPDATE_CMD])
     subprocess.run([HELM_CMD, 'registry', 'login', hostname, '--username', username, '--password', password])
