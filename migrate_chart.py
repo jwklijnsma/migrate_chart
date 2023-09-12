@@ -74,7 +74,7 @@ class ChartV2:
 
 
 @click.command()
-@click.option('--hostname', default='127.0.0.1', help='the password to login harbor')
+@click.option('--hostname', default='harbor.apps.prod.beheer-prod.rijksapps.nl', help='the password to login harbor')
 @click.option('--username', default='janwiebe@rijkscloud.nl', help='The username to login harbor')
 @click.option('--password', default='GHz49wcqhogedijk', help='the password to login harbor')
 def migrate(hostname, username, password):
